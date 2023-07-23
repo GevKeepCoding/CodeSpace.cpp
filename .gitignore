@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Algorithms/kata.cpp
+/Algorithms/kata.cpp
+/FastCode/vcpkg_installed
+/FasterCode/build
+/TipsAndTricks/vcpkg_installed

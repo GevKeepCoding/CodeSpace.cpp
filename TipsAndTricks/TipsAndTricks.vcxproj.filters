@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Chrono1.h" />
+    <ClInclude Include="Ranges1.h" />
+    <ClInclude Include="ThreeWayOperator.h" />
+    <ClInclude Include="pmr01.h" />
+    <ClInclude Include="tracing_resources.h" />
+    <ClInclude Include="cpp23_algorithms.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Multiversioning.cpp">
+      <Filter>Multiversioning_in_Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Multiversioning_in_Windows">
+      <UniqueIdentifier>{1fe85309-7823-4687-b2a3-87a37767136d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vcpkg.json" />
+  </ItemGroup>
+</Project>
