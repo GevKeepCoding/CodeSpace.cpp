@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{ecf888d5-0eb7-423b-8829-bb8107b59a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="linked_list">
+      <UniqueIdentifier>{c29dd11f-acf0-434a-8639-7c4ec42a2604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sorting">
+      <UniqueIdentifier>{5d53530b-6102-4dcd-b717-b3059c86184c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings">
+      <UniqueIdentifier>{08ce7d44-435c-4aa5-8779-4f6b09628630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backtracking">
+      <UniqueIdentifier>{dd5294b0-5d51-4931-943a-dc23c0ab0693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{ced21345-7862-4037-a4fe-40c95e506bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search">
+      <UniqueIdentifier>{50dee233-f604-413e-9913-d87512af4ab7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphAlgorithms.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithms.h">
+      <Filter>Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="StringAlgorithms.h">
+      <Filter>Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="Backtracking.h">
+      <Filter>Backtracking</Filter>
+    </ClInclude>
+    <ClInclude Include="StdKata.h" />
+    <ClInclude Include="01Finders.h">
+      <Filter>Search</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GraphAlgorithms.md">
+      <Filter>Graph</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kata.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

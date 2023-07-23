@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Numbers">
+      <UniqueIdentifier>{e0851baf-4bb4-436b-a585-3a6621697f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{8ae07ebf-669a-4a7b-9a88-3d7e53fc5364}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\math.md">
+      <Filter>Numbers</Filter>
+    </None>
+    <None Include="Geometry\Geometry_wiki.md">
+      <Filter>Geometry</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="floats-01.h">
+      <Filter>Numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="Integers.h">
+      <Filter>Numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\2DGeometry_1.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+</Project>
