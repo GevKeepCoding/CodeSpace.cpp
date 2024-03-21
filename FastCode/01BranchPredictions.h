@@ -24,7 +24,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 	std::vector<int> v1 = []() -> std::vector<int>
 	{
 		std::vector<int> result(N);
-		srand(time(NULL));
+		srand(uint32_t(time(NULL)));
 		for (int64_t i = 0; i < N; ++i) {
 			result[i] = rand();
 		}

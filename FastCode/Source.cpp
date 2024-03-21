@@ -14,5 +14,7 @@
 //#include "OFast.h"
 #include "File_io.h"
 #include "Denis1.h"
+#include "How_to_reconstruct_type.h"
+
 
 BENCHMARK_MAIN();

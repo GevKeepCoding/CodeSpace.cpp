@@ -68,6 +68,6 @@ namespace slow_simd_examples
 
 }
 
-BENCHMARK(slow_simd_examples::BM_addv2);// ->Arg(1 << 11);//->Unit(benchmark::kMicrosecond);
-BENCHMARK(slow_simd_examples::BM_addv1);// ->Arg(1 << 11);//->Unit(benchmark::kMicrosecond);
-BENCHMARK(slow_simd_examples::BM_slow_simd);// ->Arg(1 << 11);// ->Unit(benchmark::kMillisecond);
+//BENCHMARK(slow_simd_examples::BM_addv2);// ->Arg(1 << 11);//->Unit(benchmark::kMicrosecond);
+//BENCHMARK(slow_simd_examples::BM_addv1);// ->Arg(1 << 11);//->Unit(benchmark::kMicrosecond);
+//BENCHMARK(slow_simd_examples::BM_slow_simd);// ->Arg(1 << 11);// ->Unit(benchmark::kMillisecond);

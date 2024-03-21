@@ -4,3 +4,4 @@
 * Douglas-Peucker
 * Visvalingam
  
+ 

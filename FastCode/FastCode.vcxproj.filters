@@ -5,23 +5,11 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Simd">
-      <UniqueIdentifier>{8fe39ad7-22d2-43a8-b1b6-98cb199ac46e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="pmr">
       <UniqueIdentifier>{3c3d578e-4b2c-4b37-b2c4-510c3ca86670}</UniqueIdentifier>
     </Filter>
     <Filter Include="BetterBranchPredictor">
       <UniqueIdentifier>{8da3558f-1d3e-4eb7-838f-5b043c2b254d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simd\Lemire">
-      <UniqueIdentifier>{d6e408bf-1020-455e-821f-efcf34602637}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simd\Arm">
-      <UniqueIdentifier>{46e5389d-c6e0-4cb5-942d-fbd74d8e245e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simd\Stolin">
-      <UniqueIdentifier>{0a2a1c2d-2a4d-4b25-a461-ce3895457cb3}</UniqueIdentifier>
     </Filter>
     <Filter Include="FastParsing">
       <UniqueIdentifier>{3e323213-032d-40ee-becd-2d892d79e9f7}</UniqueIdentifier>
@@ -29,14 +17,8 @@
     <Filter Include="ImageProcessing">
       <UniqueIdentifier>{ec62456f-e820-451c-acff-61f9cd0666a1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Simd\Benchmarks">
-      <UniqueIdentifier>{b3dfc51e-d7b7-4d60-827b-08bb04b4c17f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="IO">
       <UniqueIdentifier>{d6902db1-72dc-48c5-8b0d-7898ff4f02e4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simd\Denis Yaroshevskiy">
-      <UniqueIdentifier>{a3df2c52-91d2-4462-b6c6-b74e7d3ace99}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,9 +28,6 @@
     <ClCompile Include="01Parsing.cpp">
       <Filter>FastParsing</Filter>
     </ClCompile>
-    <ClCompile Include="kata.cpp">
-      <Filter>Simd</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="exp1.h">
@@ -56,9 +35,6 @@
     </ClInclude>
     <ClInclude Include="Memory101.h">
       <Filter>TipsAndTricks</Filter>
-    </ClInclude>
-    <ClInclude Include="Simd1.h">
-      <Filter>Simd</Filter>
     </ClInclude>
     <ClInclude Include="Tips101.h">
       <Filter>TipsAndTricks</Filter>
@@ -72,23 +48,8 @@
     <ClInclude Include="01BranchPredictions.h">
       <Filter>BetterBranchPredictor</Filter>
     </ClInclude>
-    <ClInclude Include="substr_search_learning.h">
-      <Filter>Simd</Filter>
-    </ClInclude>
-    <ClInclude Include="Arm01.h">
-      <Filter>Simd\Arm</Filter>
-    </ClInclude>
-    <ClInclude Include="Stolin01.h">
-      <Filter>Simd\Stolin</Filter>
-    </ClInclude>
-    <ClInclude Include="01Stolin.h">
-      <Filter>Simd\Stolin</Filter>
-    </ClInclude>
     <ClInclude Include="ip01.h">
       <Filter>ImageProcessing</Filter>
-    </ClInclude>
-    <ClInclude Include="01bench.h">
-      <Filter>Simd\Benchmarks</Filter>
     </ClInclude>
     <ClInclude Include="OFast.h" />
     <ClInclude Include="LazyPrValue.h">
@@ -97,27 +58,15 @@
     <ClInclude Include="File_io.h">
       <Filter>IO</Filter>
     </ClInclude>
-    <ClInclude Include="Denis1.h">
-      <Filter>Simd\Denis Yaroshevskiy</Filter>
+    <ClInclude Include="How_to_reconstruct_type.h">
+      <Filter>IO</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="FastMemory1.md">
       <Filter>TipsAndTricks</Filter>
     </None>
-    <None Include="Simd1.md">
-      <Filter>Simd</Filter>
-    </None>
     <None Include="vcpkg.json" />
     <None Include="Reame.md" />
-    <None Include="ArmSimd.md">
-      <Filter>Simd\Arm</Filter>
-    </None>
-    <None Include="DanielLemire_blogs.md">
-      <Filter>Simd\Lemire</Filter>
-    </None>
-    <None Include="Stolin.md">
-      <Filter>Simd\Stolin</Filter>
-    </None>
   </ItemGroup>
 </Project>

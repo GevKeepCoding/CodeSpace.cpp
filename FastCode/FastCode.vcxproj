@@ -94,6 +94,7 @@
       <ConformanceMode>true</ConformanceMode>
       <BuildStlModules>true</BuildStlModules>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions512</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -165,34 +166,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="01Parsing.cpp" />
-    <ClCompile Include="kata.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="01bench.h" />
     <ClInclude Include="01BranchPredictions.h" />
-    <ClInclude Include="01Stolin.h" />
     <ClInclude Include="01_pmr.h" />
-    <ClInclude Include="Arm01.h" />
     <ClInclude Include="BranchLessProgramming.h" />
-    <ClInclude Include="Denis1.h" />
     <ClInclude Include="exp1.h" />
     <ClInclude Include="File_io.h" />
+    <ClInclude Include="How_to_reconstruct_type.h" />
     <ClInclude Include="ip01.h" />
     <ClInclude Include="LazyPrValue.h" />
     <ClInclude Include="Memory101.h" />
     <ClInclude Include="OFast.h" />
-    <ClInclude Include="Simd1.h" />
-    <ClInclude Include="Stolin01.h" />
-    <ClInclude Include="substr_search_learning.h" />
     <ClInclude Include="Tips101.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ArmSimd.md" />
-    <None Include="DanielLemire_blogs.md" />
     <None Include="FastMemory1.md" />
-    <None Include="Simd1.md" />
-    <None Include="Stolin.md" />
     <None Include="vcpkg.json" />
     <None Include="Reame.md" />
   </ItemGroup>

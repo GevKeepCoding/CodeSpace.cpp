@@ -109,6 +109,20 @@ namespace Util
 		return Vector2::Distance(p, cp);
 	}
 
+	/**
+	 * @brief calculates point to segment distance using cross product.
+	 */
+	double PointSegmentDistanceV2(Vector2 p, Vector2 a, Vector2 b) {
+		Vector2 ab = b - a;
+		Vector2 ap = p - a;
+		// compute the cross product
+		double cross = ap.cross(ab);
+		return cross / ab.length();
+	}
+	//
+
+
+
 	bool arePerpendicular(Vector2 a1, Vector2 a2, Vector2 b1, Vector2 b2) {
 		double slopeA = (a2.getY() - a1.getY()) / (a2.getX() - a1.getX());
 		double slopeB = (b2.getY() - b1.getY()) / (b2.getX() - b1.getX());
@@ -257,7 +271,10 @@ namespace Util
 
 
 
-
+	//-------------------------
+	// polygon simplification in general:
+	// Ramer-Douglas-Peucker Polyline Simplification
+	//https://www.youtube.com/watch?v=y8uO-0JB1V4
 
 
 
