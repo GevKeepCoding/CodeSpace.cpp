@@ -4,6 +4,7 @@
 #include <benchmark/benchmark.h>
 
 
+
 int s = 0;
 
 __declspec(noinline)
@@ -31,21 +32,7 @@ void avx2Perf(benchmark::State& state)
 	state.counters["Items"] = N;
 }
 
-BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
 
 
 

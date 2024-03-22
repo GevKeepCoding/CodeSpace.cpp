@@ -165,7 +165,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01Parsing.cpp" />
+    <ClCompile Include="Parsing1.h" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +180,7 @@
     <ClInclude Include="Memory101.h" />
     <ClInclude Include="OFast.h" />
     <ClInclude Include="Tips101.h" />
+    <ClInclude Include="Tricks1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FastMemory1.md" />

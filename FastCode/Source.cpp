@@ -4,17 +4,6 @@
 #include <benchmark/benchmark.h>
 
 
-#include "Simd1.h"
-#include "substr_search_learning.h"
-//#include "Stolin01.h"
-//#include "01Stolin.h"
-
-#include "BranchLessProgramming.h"
-#include "01BranchPredictions.h"
-//#include "OFast.h"
-#include "File_io.h"
-#include "Denis1.h"
-#include "How_to_reconstruct_type.h"
 
 
 BENCHMARK_MAIN();

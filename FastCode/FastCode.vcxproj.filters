@@ -25,7 +25,7 @@
     <ClCompile Include="Source.cpp">
       <Filter>TipsAndTricks</Filter>
     </ClCompile>
-    <ClCompile Include="01Parsing.cpp">
+    <ClCompile Include="Parsing1.h">
       <Filter>FastParsing</Filter>
     </ClCompile>
   </ItemGroup>
@@ -60,6 +60,9 @@
     </ClInclude>
     <ClInclude Include="How_to_reconstruct_type.h">
       <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Tricks1.h">
+      <Filter>BetterBranchPredictor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -115,7 +115,6 @@
       <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
       <TranslateIncludes>false</TranslateIncludes>
       <EnableModules>true</EnableModules>
-      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
     </ClCompile>
     <Link>
