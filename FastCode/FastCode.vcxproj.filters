@@ -20,20 +20,20 @@
     <Filter Include="IO">
       <UniqueIdentifier>{d6902db1-72dc-48c5-8b0d-7898ff4f02e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{c7972aed-2212-4d8b-a77e-7f6da6058a37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>TipsAndTricks</Filter>
     </ClCompile>
-    <ClCompile Include="01Parsing.cpp">
+    <ClCompile Include="Parsing1.h">
       <Filter>FastParsing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="exp1.h">
-      <Filter>TipsAndTricks</Filter>
-    </ClInclude>
-    <ClInclude Include="Memory101.h">
       <Filter>TipsAndTricks</Filter>
     </ClInclude>
     <ClInclude Include="Tips101.h">
@@ -61,6 +61,14 @@
     <ClInclude Include="How_to_reconstruct_type.h">
       <Filter>IO</Filter>
     </ClInclude>
+    <ClInclude Include="Tricks1.h">
+      <Filter>BetterBranchPredictor</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Memory1.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_Iteration\FastIteration.h" />
+    <ClInclude Include="Helper\simplify.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FastMemory1.md">
@@ -68,5 +76,14 @@
     </None>
     <None Include="vcpkg.json" />
     <None Include="Reame.md" />
+    <None Include="Memory\Readme.md">
+      <Filter>Memory</Filter>
+    </None>
+    <None Include="Understanding_Performance.md">
+      <Filter>Memory</Filter>
+    </None>
+    <None Include="Memory\memory1.md">
+      <Filter>Memory</Filter>
+    </None>
   </ItemGroup>
 </Project>

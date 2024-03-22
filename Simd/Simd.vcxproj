@@ -166,20 +166,24 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CppSimd_Book\Readme.md" />
     <None Include="DanielLemire_blogs.md" />
     <None Include="OldNew_Concepts.md" />
-    <None Include="Stolin.md" />
-    <None Include="Stolin\Simd1.md" />
+    <None Include="Stolin\Stolin.md" />
     <None Include="todo.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="algorithms01.h" />
     <ClInclude Include="Denis.h" />
     <ClInclude Include="fast\algorithms1.h" />
+    <ClInclude Include="random_data.h" />
     <ClInclude Include="Simd1.h" />
     <ClInclude Include="Simdiy1.h" />
     <ClInclude Include="Simd_comparison_instructions.h" />
-    <ClInclude Include="Stolin\Stolin.h" />
+    <ClInclude Include="Stolin\OptimizingBinarySearch.h" />
+    <ClInclude Include="Stolin\Stolin1.h" />
     <ClInclude Include="substr_search_learning.h" />
+    <ClInclude Include="Tuning1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

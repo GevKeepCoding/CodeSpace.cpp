@@ -20,12 +20,12 @@ MyStruct::~MyStruct() {
 }
 namespace Better_Branch_Predictions01 // Very different results with different compilers/versions.
 {
-	int N = 1 << 22;
+	int n = 1 << 22;
 	std::vector<int> v1 = []() -> std::vector<int>
 	{
-		std::vector<int> result(N);
+		std::vector<int> result(n);
 		srand(uint32_t(time(NULL)));
-		for (int64_t i = 0; i < N; ++i) {
+		for (int64_t i = 0; i < n; ++i) {
 			result[i] = rand();
 		}
 		return result;
@@ -47,7 +47,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 	{
 		for (auto _ : state) {
 			a1 = 0;
-			for (int i = 0; i < N; ++i) {
+			for (int i = 0; i < n; ++i) {
 				if (IsLeapYear04(p1[i])) {
 					a1 += 1;
 				}
@@ -61,7 +61,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 			benchmark::DoNotOptimize(a2);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 	//BENCHMARK(BM_IsLeapYear_04)->Arg(1 << 22);
 
@@ -83,7 +83,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 	{
 		for (auto _ : state) {
 			a1 = 0;
-			for (int i = 0; i < N; ++i) {
+			for (int i = 0; i < n; ++i) {
 				if (IsLeapYear01(p1[i])) {
 					a1 += 1;
 				}
@@ -97,7 +97,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 			benchmark::DoNotOptimize(a2);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 	//BENCHMARK(BM_IsLeapYear_branch_not_predicted)->Arg(1 << 22);
 
@@ -116,7 +116,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 	void BM_IsLeapYear_branch_predicted(benchmark::State& state)
 	{
 		for (auto _ : state) {
-			for (int64_t i = 0; i < N; ++i) {
+			for (int64_t i = 0; i < n; ++i) {
 				if (IsLeapYear02(p1[i])) {
 					a1 += 1;
 				}
@@ -129,7 +129,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 			benchmark::DoNotOptimize(a2);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 	//BENCHMARK(BM_IsLeapYear_branch_predicted)->Arg(1 << 22);
 
@@ -146,7 +146,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 	void BM_IsLeapYear_branch_predicted_AndMore(benchmark::State& state)
 	{
 		for (auto _ : state) {
-			for (int64_t i = 0; i < N; ++i) {
+			for (int64_t i = 0; i < n; ++i) {
 				if (IsLeapYear03(p1[i])) {
 					a1 += 1;
 				}
@@ -159,7 +159,7 @@ namespace Better_Branch_Predictions01 // Very different results with different c
 			benchmark::DoNotOptimize(a2);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 	//BENCHMARK(BM_IsLeapYear_branch_predicted_AndMore)->Arg(1 << 22);
 

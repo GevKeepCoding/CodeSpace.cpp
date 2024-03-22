@@ -55,7 +55,7 @@ namespace {
 		operator PersonId() { PersonId(id); }
 	};
 
-	void fun() {
+	void longest_substring_without_repeating_characters2() {
 		PersonId a, b;
 		PersonIdLike c;
 		//a < b - > a.operator<=>(b) < 0

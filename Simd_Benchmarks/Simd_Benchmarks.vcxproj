@@ -26,6 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Find.h" />
+    <ClInclude Include="Linux\LinuxSimdify1.h" />
     <ClInclude Include="Matrix_multiply_optimization_tricks.h" />
     <ClInclude Include="Slow_Simd.h" />
     <ClInclude Include="Vectorized_transform_reduce_perf.h" />

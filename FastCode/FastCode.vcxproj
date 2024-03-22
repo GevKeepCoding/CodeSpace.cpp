@@ -165,7 +165,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01Parsing.cpp" />
+    <ClCompile Include="Parsing1.h" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -173,16 +173,22 @@
     <ClInclude Include="01_pmr.h" />
     <ClInclude Include="BranchLessProgramming.h" />
     <ClInclude Include="exp1.h" />
+    <ClInclude Include="Fast_Iteration\FastIteration.h" />
     <ClInclude Include="File_io.h" />
+    <ClInclude Include="Helper\simplify.h" />
     <ClInclude Include="How_to_reconstruct_type.h" />
     <ClInclude Include="ip01.h" />
     <ClInclude Include="LazyPrValue.h" />
-    <ClInclude Include="Memory101.h" />
+    <ClInclude Include="Memory\Memory1.h" />
     <ClInclude Include="OFast.h" />
     <ClInclude Include="Tips101.h" />
+    <ClInclude Include="Tricks1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FastMemory1.md" />
+    <None Include="Memory\memory1.md" />
+    <None Include="Memory\Readme.md" />
+    <None Include="Understanding_Performance.md" />
     <None Include="vcpkg.json" />
     <None Include="Reame.md" />
   </ItemGroup>

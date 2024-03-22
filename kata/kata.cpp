@@ -4,6 +4,7 @@
 #include <benchmark/benchmark.h>
 
 
+
 int s = 0;
 
 __declspec(noinline)
@@ -16,36 +17,22 @@ int sum(const std::vector<unsigned long>& v) {
 
 void avx2Perf(benchmark::State& state)
 {
-	auto N = state.range(0);
+	auto n = state.range(0);
 	srand(1);
-	std::vector<unsigned long> v1(N);
-	for (int64_t i = 0; i < N; ++i) {
+	std::vector<unsigned long> v1(n);
+	for (int64_t i = 0; i < n; ++i) {
 		v1[i] = rand();
 	}
 
 	for (auto _ : state)
 		s += sum(v1);
 
-	state.SetItemsProcessed(N * state.iterations());
-	state.SetBytesProcessed(N * sizeof(long) * state.iterations());
-	state.counters["Items"] = N;
+	state.SetItemsProcessed(n * state.iterations());
+	state.SetBytesProcessed(n * sizeof(long) * state.iterations());
+	state.counters["Items"] = n;
 }
 
-BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
 
 
 

@@ -3,35 +3,85 @@
 #pragma comment(lib, "shlwapi.lib")
 #include <benchmark/benchmark.h>
 
-
-int s = 0;
-
-__declspec(noinline)
-int sum(const std::vector<unsigned long>& v) {
-	for (int i = 0; i < v.size(); ++i)
-		s += v[i];
-	return s;
-}
+#include <immintrin.h>
+#include "random_data.h"
+#include "algorithms01.h"
 
 
-void avx2Perf(benchmark::State& state)
-{
-	auto N = state.range(0);
-	srand(1);
-	std::vector<unsigned long> v1(N);
-	for (int64_t i = 0; i < N; ++i) {
-		v1[i] = rand();
-	}
 
-	for (auto _ : state)
-		s += sum(v1);
 
-	state.SetItemsProcessed(N * state.iterations());
-	state.SetBytesProcessed(N * sizeof(long) * state.iterations());
-	state.counters["Items"] = N;
-}
+//Making use of SIMD Vectorisation to Improve Code Performance
+// https://www.youtube.com/watch?v=62_TLN-wk4s
+// James Willis (SciNet)
+//https://www.computeontario.ca/training-colloquia
 
-BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
+
+__m256i mmData = _mm256_set1_epi32(1);
+__m256i mmMax = _mm256_set1_epi32(0);
+
+bool test = [&]() {
+	
+
+	auto res = _mm256_cmpgt_epi32(mmData, mmMax);
+	
+	
+	return mysimd_max_element::max_of_8_in32_v2(res);
+
+
+}();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//int s = 0;
+//
+//__declspec(noinline)
+//int sum(const std::vector<unsigned long>& v) {
+//	for (int i = 0; i < v.size(); ++i)
+//		s += v[i];
+//	return s;
+//}
+//
+//
+//void avx2Perf(benchmark::State& state)
+//{
+//	auto N = state.range(0);
+//	srand(1);
+//	std::vector<unsigned long> v1(N);
+//	for (int64_t i = 0; i < N; ++i) {
+//		v1[i] = rand();
+//	}
+//
+//	for (auto _ : state)
+//		s += sum(v1);
+//
+//	state.SetItemsProcessed(N * state.iterations());
+//	state.SetBytesProcessed(N * sizeof(long) * state.iterations());
+//	state.counters["Items"] = N;
+//}
+
+//BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
 
 
 

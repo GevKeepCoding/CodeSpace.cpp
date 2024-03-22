@@ -13,6 +13,7 @@
     <ClInclude Include="Ranges\PowerRanges.h" />
     <ClInclude Include="Symbolic_Calculus.h" />
     <ClInclude Include="Cpp23_1.h" />
+    <ClInclude Include="Ranges\Ranges3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Multiversioning.h">

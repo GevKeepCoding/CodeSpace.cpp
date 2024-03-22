@@ -174,6 +174,7 @@
     <ClInclude Include="Ranges\PowerRanges.h" />
     <ClInclude Include="Ranges\Ranges1.h" />
     <ClInclude Include="Ranges\Ranges2.h" />
+    <ClInclude Include="Ranges\Ranges3.h" />
     <ClInclude Include="Symbolic_Calculus.h" />
     <ClInclude Include="ThreeWayOperator.h" />
     <ClInclude Include="tracing_resources.h" />

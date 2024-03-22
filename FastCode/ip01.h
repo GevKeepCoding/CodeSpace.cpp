@@ -7,7 +7,7 @@
 
 namespace image_processing {
 	int* v;
-	const int N = 128 * 4;
+	const int n = 128 * 4;
 
 	
 	/*
@@ -52,7 +52,7 @@ namespace image_processing {
 		const __m128i zero = _mm_setzero_si128();
 
 		for (__m128i* i = reinterpret_cast<reg*>(v),
-			*end = reinterpret_cast<reg*>(v + N);
+			*end = reinterpret_cast<reg*>(v + n);
 			i < end; ++i)
 		{
 			const reg srcPixel = _mm_load_si128(i);//argb argb argb argb
@@ -85,7 +85,7 @@ namespace image_processing {
 		const reg  zero = _mm_setzero_si128();
 
 		for (reg* i = reinterpret_cast<reg*>(v),
-			*end = reinterpret_cast<reg*>(v + N);
+			*end = reinterpret_cast<reg*>(v + n);
 			i < end; i++)
 		{
 			const reg srcPixels = _mm_load_si128(i);
@@ -105,7 +105,7 @@ namespace image_processing {
 		const reg  shiftMask = _mm_set1_epi8(0x7F);
 
 		for (reg* i = reinterpret_cast<reg*>(v),
-			*end = reinterpret_cast<reg*>(v + N);
+			*end = reinterpret_cast<reg*>(v + n);
 			i < end; i++)
 		{
 			const reg srcPixels = _mm_load_si128(i);
@@ -120,7 +120,7 @@ namespace image_processing {
 		const reg  zero = _mm_setzero_si128();
 
 		for (reg* i = reinterpret_cast<reg*>(v),
-			*end = reinterpret_cast<reg*>(v + N);
+			*end = reinterpret_cast<reg*>(v + n);
 			i < end; i++)
 		{
 			const reg srcPixels = _mm_load_si128(i);
@@ -156,7 +156,7 @@ namespace image_processing {
 		const __m128i color = _mm_set1_epi32(c);
 
 		for (reg* i = reinterpret_cast<reg*>(v),
-			*end = reinterpret_cast<reg*>(v + N);
+			*end = reinterpret_cast<reg*>(v + n);
 			i < end; i++)
 		{
 			const reg dstPixels = _mm_load_si128(i);

@@ -6,15 +6,15 @@ namespace Finders01 {
 	//https://www.youtube.com/watch?v=6TW3JSVEJQE&list=RDCMUCyFWoLmPTgZ3BkHIKMRSV1g&index=7
 	// O(N*M) and we need backup of input txt(it can't be stream)
 	int search(string pat, string txt) {
-		int i, N = txt.length();
+		int i, n = txt.length();
 		int j, M = pat.length();
 
-		for (i = 0, j = 0; i < N && j < M; ++i) {
+		for (i = 0, j = 0; i < n && j < M; ++i) {
 			if (txt.at(i) == pat.at(j)) ++j;
 			else { i -= j; j = 0; }
 		}
 		if (j == M) return i - M;
-		else		return N;
+		else		return n;
 	}
 
 	// O(N) Linear: Knuth-Morris-Pratt algorithm is using DFA
@@ -23,13 +23,13 @@ namespace Finders01 {
 		int** dfa;
 		int M;
 		int search(string txt) {
-			int i, j, N = txt.length();
-			for (i = 0, j = 0; i < N && j < M; ++i)
+			int i, j, n = txt.length();
+			for (i = 0, j = 0; i < n && j < M; ++i)
 			{
 				j = dfa[txt.at(i)][j];
 			}
 			if (j == M) return i - M;
-			else		return N;
+			else		return n;
 		}
 
 		// constructing DFA for ABABAC string:
@@ -43,12 +43,12 @@ namespace Finders01 {
 			p[2] = new int[M];
 
 			dfa[pat.at(0)][0] = 1;
-			for (int X = 0, j = 1; j < M; ++j) {
+			for (int x = 0, j = 1; j < M; ++j) {
 				for (int c = 0; c < 3; ++c) {
-					dfa[c][j] = dfa[c][X];
+					dfa[c][j] = dfa[c][x];
 				}
 				dfa[pat.at(j)][j] = j + 1;
-				X = dfa[pat.at(j)][X];
+				x = dfa[pat.at(j)][x];
 			}
 
 		}

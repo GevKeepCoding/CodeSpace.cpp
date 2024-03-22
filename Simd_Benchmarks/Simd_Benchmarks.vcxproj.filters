@@ -35,5 +35,8 @@
     <ClInclude Include="Matrix_multiply_optimization_tricks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Linux\LinuxSimdify1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,11 @@
 #pragma once
+
+/*
+	Just add below line and your iostream io will get much faster.
+	static int speedup = []() { ios::sync_with_stdio(false); cin.tie(nullptr); return 0; }();
+*/
+
+
 //#include <algorithm>
 //
 //

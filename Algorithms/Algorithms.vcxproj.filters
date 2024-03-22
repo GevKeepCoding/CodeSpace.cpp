@@ -24,10 +24,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GraphAlgorithms.h">
+    <ClInclude Include="Graphs\GraphAlgorithms.h">
       <Filter>Graph</Filter>
     </ClInclude>
-    <ClInclude Include="Graph.h">
+    <ClInclude Include="Graphs\Graph.h">
       <Filter>Graph</Filter>
     </ClInclude>
     <ClInclude Include="SortingAlgorithms.h">
@@ -43,9 +43,10 @@
     <ClInclude Include="01Finders.h">
       <Filter>Search</Filter>
     </ClInclude>
+    <ClInclude Include="Graphs\graph_algos2.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="GraphAlgorithms.md">
+    <None Include="Graphs\GraphAlgorithms.md">
       <Filter>Graph</Filter>
     </None>
   </ItemGroup>

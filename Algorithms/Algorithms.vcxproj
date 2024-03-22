@@ -115,7 +115,6 @@
       <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
       <TranslateIncludes>false</TranslateIncludes>
       <EnableModules>true</EnableModules>
-      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
     </ClCompile>
     <Link>
@@ -143,13 +142,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="GraphAlgorithms.md" />
+    <None Include="Graphs\GraphAlgorithms.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01Finders.h" />
     <ClInclude Include="Backtracking.h" />
-    <ClInclude Include="Graph.h" />
-    <ClInclude Include="GraphAlgorithms.h" />
+    <ClInclude Include="Graphs\Graph.h" />
+    <ClInclude Include="Graphs\GraphAlgorithms.h" />
+    <ClInclude Include="Graphs\graph_algos2.h" />
     <ClInclude Include="SortingAlgorithms.h" />
     <ClInclude Include="StdKata.h" />
     <ClInclude Include="StringAlgorithms.h" />

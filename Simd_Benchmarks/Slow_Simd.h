@@ -4,8 +4,8 @@
 
 namespace slow_simd_examples
 {
-	constexpr int N = 2048;
-	double a[N], b[N], c[N];
+	constexpr int n = 2048;
+	double a[n], b[n], c[n];
 
 	__declspec(noinline)
 		void addv1(double* a, double* b, double* c, int n)
@@ -38,32 +38,32 @@ namespace slow_simd_examples
 	void BM_addv1(benchmark::State& state)
 	{
 		for (auto _ : state) {
-			addv1(a, b, c, N);
+			addv1(a, b, c, n);
 			benchmark::DoNotOptimize(c);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 
 	void BM_addv2(benchmark::State& state)
 	{
 		for (auto _ : state) {
-			addv2(a, b, c, N);
+			addv2(a, b, c, n);
 			benchmark::DoNotOptimize(c);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 
 
 	void BM_slow_simd(benchmark::State& state)
 	{
 		for (auto _ : state) {
-			slow_simd(a, b, c, N);
+			slow_simd(a, b, c, n);
 			benchmark::DoNotOptimize(c);
 			benchmark::ClobberMemory();
 		}
-		state.SetItemsProcessed(N * state.iterations());
+		state.SetItemsProcessed(n * state.iterations());
 	}
 
 }
