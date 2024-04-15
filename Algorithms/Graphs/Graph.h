@@ -3,7 +3,8 @@
 #include <vector>
 
 // vector of vector graph (each vertex contains, list of it's adjacent vertices).
-class vvGraph {
+class vvGraph
+{
 	std::vector<std::vector<size_t>> matrix;
 
 public:

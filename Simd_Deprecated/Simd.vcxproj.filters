@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="DenisYoroshevskiy">
+      <UniqueIdentifier>{37aabd15-f766-4746-97a6-e51a27f672fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stolin">
+      <UniqueIdentifier>{7f60fcd3-bee4-4541-a101-dac24589150b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FastAlgorithmsWithSimd">
+      <UniqueIdentifier>{0db93def-e026-44db-a2a1-27ea89954e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Performance">
+      <UniqueIdentifier>{a360bebb-9e7b-4ac5-bbfd-4c0ffd8437e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="todo.md" />
+    <None Include="OldNew_Concepts.md">
+      <Filter>Performance</Filter>
+    </None>
+    <None Include="DanielLemire_blogs.md" />
+    <None Include="Stolin\Stolin.md">
+      <Filter>Stolin</Filter>
+    </None>
+    <None Include="CppSimd_Book\Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Denis.h">
+      <Filter>DenisYoroshevskiy</Filter>
+    </ClInclude>
+    <ClInclude Include="fast\algorithms1.h">
+      <Filter>FastAlgorithmsWithSimd</Filter>
+    </ClInclude>
+    <ClInclude Include="Simd_comparison_instructions.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="substr_search_learning.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="Simdiy1.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="Simd1.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithms01.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="Stolin\Stolin1.h">
+      <Filter>Stolin</Filter>
+    </ClInclude>
+    <ClInclude Include="random_data.h" />
+    <ClInclude Include="Tuning1.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="Stolin\OptimizingBinarySearch.h" />
+    <ClInclude Include="SimdLand\S1.h" />
+    <ClInclude Include="tilir.h" />
+    <ClInclude Include="SimdLand\Instructions1.h" />
+    <ClInclude Include="Helper\simplify.h" />
+  </ItemGroup>
+</Project>

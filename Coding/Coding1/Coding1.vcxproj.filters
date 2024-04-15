@@ -13,10 +13,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrays\arrays1.h" />
-    <ClInclude Include="Binary_Trees\binary_trees1.h" />
+    <ClInclude Include="Trees\binary_trees1.h" />
     <ClInclude Include="Geometry\2dGeometry1.h" />
     <ClInclude Include="arrays\arrays2.h" />
     <ClInclude Include="Helper\simplify.h" />
     <ClInclude Include="Strings\strings1.h" />
+    <ClInclude Include="Graphs\Simple_graphs_1.h" />
+    <ClInclude Include="Matrix\matrix1.h" />
+    <ClInclude Include="Trees\Fenwick_tree.h" />
+    <ClInclude Include="DP\DP1.h" />
   </ItemGroup>
 </Project>

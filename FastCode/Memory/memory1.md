@@ -65,3 +65,79 @@ will run 4 processes on first 4 cores
 	and memory.
 
 ---
+### [Non-Uniform Memory Architecture (NUMA): A Nearly Unfathomable Morass of Arcana - Fedor Pikus CppNow](https://www.youtube.com/watch?v=f0ZKBusa4CI)
+
+**Performance implications of NUMA**
+* Accessing local memory is different from accessing non-local memory.
+* To access memory from another node, the node's CPU must be involved.
+* Peak bandwidth is reduced by 40% to 60% for cross node access.
+	- This is remarkably universal for x86 hardware from 2014 to 2022.
+	- Some systems show degradation for even 1 thread, some do not.
+	- Newer systems have higher bandwidth, but larger penalty.
+* Cache bandwidth is not affected (without data sharing).
+* Memory bandwidth is measured by sequential data transfers.
+
+***Even when two cores in different nodes are accessing memory in the same page, the memory access is slower.***
+***If all cores access memory in the same page, then the slowdown is 20 to 100x times.***
+
+
+#### Intel has memory latency checker.
+mlc --latency_matrix -e -r
+
+**To find out numa related issues:**
+1. numactl --hardware
+1. numactl --cpunodebind=0 ./app args...
+1. numactl --membind=0 ./app args...
+1. numactl --interleave=all ./app args...
+
+
+**Performance of a single atomic operation often shows some slowdown on NUMA systems.**
+	- Especially on Read-Modify-Write operations.
+	- Usually not for atomic load or store (so RCU algorithms may have advantage)
+	- Intel QPI systems may not show any slowdown at all.
+	- AMD Epyc systems show little to none NUMA penalty.
+
+* Most concurrent data structures and executors use shared variables and atomic operations.
+	- locks too (usually atomic exchange)
+* Maintaining consistent global shared state on NUMA systems is very expensive.
+
+** NUMA programming api allows very fine control of thread and memory interactions with NUMA hardware.**
+
+#include <numa.h>
+#include <numaif.h>
+* Restrict the calling thread to a subset of NUMA nodes or CPUs.
+* numa_run_on_node(), numa_sched_set_affinity()
+also pthread_setaffinity_np() from pthreads library.
+* Restrict memory allocations by the calling thread to specific NUMA nodes
+numa_set_preferred(), set_mempolicy()
+* Functions for direct allocations on the specified node, moving memory between nodes,
+ querying current NUMA policies and hardware capabilities.
+* Caution: cpu-to-node mapping is SLOOOW (cache cpu maps and masks)
+
+
+To find to what node the Device is connected:
+/sbin/lspci
+04:00.0 Ethernet controller: Intel Corporation 82599ES...
+Then run below command
+cat /sys/bus/pci/devices/0000\:04\:00.0/numa_node
+0
+
+Sometimes you can get perf improvement up to 20% by moving the device to the same node as the CPU.
+This related to what Fedor found.
+
+** GPUs are a special case of I/O**
+	- GPU interfaces are usually faster than any other device.
+	- Data transfer is often the bottleneck of GPU acceleration.
+* CUDA bandwidth test for Tesla V100: 10GB/s(node 0) vs 7GB/s(node 1)
+* If GPU-CPU transfer is a concern, pinned memory should be used
+	- Pinned memory will override NUMA policy.
+* Pinned memory is on the GPU node
+	- At least by default.
+	- Transfer rate is 13GB/s
+
+
+** TLB shootdown**
+Basically after page get's mapped to another node, the TLB needs to be invalidated.
+kernel will halt all processes and update TLBs on all CPUs.(TLB is per CPU)
+
+---

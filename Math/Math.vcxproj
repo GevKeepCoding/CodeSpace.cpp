@@ -144,13 +144,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Algebra1.h" />
+    <ClInclude Include="Algebra\Groups.h" />
     <ClInclude Include="floats-01.h" />
     <ClInclude Include="Geometry\2DGeometry_1.h" />
     <ClInclude Include="Integers.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\math.md" />
+    <None Include="Algebra\Abstract.Algebra.md" />
     <None Include="Geometry\Geometry_wiki.md" />
+    <None Include="New\n1.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />

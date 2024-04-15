@@ -1,0 +1,12 @@
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/CMakeFiles/edit_cache.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/CMakeFiles/rebuild_cache.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/CMakeFiles/list_install_components.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/CMakeFiles/install.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/CMakeFiles/install/local.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/benchmark.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/benchmark_main.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/edit_cache.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/rebuild_cache.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/list_install_components.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/install.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-dbg/src/CMakeFiles/install/local.dir

@@ -1,148 +1,28 @@
 //BENCHMARK_STATIC_DEFINE;
 
-#pragma comment(lib, "shlwapi.lib")
-#include <benchmark/benchmark.h>
+//#pragma comment(lib, "shlwapi.lib")
+//#include <benchmark/benchmark.h>
+//BENCHMARK_MAIN();
+//
+#include "..\SimdLand\Helpers\simplify.h"
+using namespace simdv1;
+//
 
+import std;
 
+//
+//#include <queue>
+//#include <mutex>
+//#include <condition_variable>
+using namespace std;
 
-int s = 0;
-
-__declspec(noinline)
-int sum(const std::vector<unsigned long>& v) {
-	for (int i = 0; i < v.size(); ++i)
-		s += v[i];
-	return s;
-}
-
-
-void avx2Perf(benchmark::State& state)
+void example_inserti()
 {
-	auto n = state.range(0);
-	srand(1);
-	std::vector<unsigned long> v1(n);
-	for (int64_t i = 0; i < n; ++i) {
-		v1[i] = rand();
-	}
-
-	for (auto _ : state)
-		s += sum(v1);
-
-	state.SetItemsProcessed(n * state.iterations());
-	state.SetBytesProcessed(n * sizeof(long) * state.iterations());
-	state.counters["Items"] = n;
+	ri1 a = set_xvalues(1);
+	ri5 b = set_zvalues(2);
+	ri5 c = _mm512_inserti32x4(b, a, 3);
+	print_zreg(c);
 }
-
-//BENCHMARK(avx2Perf)->Arg(1 << 10);//->Unit(benchmark::kSecond)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//struct FooUpdateInOut {
-//	float velocity[2];
-//	float foo;
-//};
-//
-//
-//struct FooUpdateIn
-//{
-//	float velocity[2];
-//	float foo;
-//};
-//
-//struct FooUpdateOut {
-//	float foo;
-//};
-//
-//__declspec(noinline)
-//void UpdateFoo(const FooUpdateIn* in, FooUpdateOut* out, int count, float f)
-//{
-//	for (int i = 0; i < count; ++i)
-//	{
-//		float mag = sqrtf(in[i].velocity[0] * in[i].velocity[0] + in[i].velocity[1] * in[i].velocity[1]);
-//		out[i].foo = in[i].foo + mag * f;
-//	}
-//}
-//
-//__declspec(noinline)
-//void UpdateFoo2(FooUpdateInOut* a, int count, float f)
-//{
-//	for (int i = 0; i < count; ++i)
-//	{
-//		float mag = sqrtf(a[i].velocity[0] * a[i].velocity[0] + a[i].velocity[1] * a[i].velocity[1]);
-//		a[i].foo += mag * f;
-//	}
-//}
-//
-//static void BM_UpdateFoo2(benchmark::State& state) {
-//	FooUpdateInOut* a = new FooUpdateInOut[state.range(0)];
-//	for (auto _ : state) {
-//		UpdateFoo2(a, (int)state.range(0), 0.1f);
-//		benchmark::DoNotOptimize(a);
-//		benchmark::ClobberMemory();
-//	}
-//	state.SetItemsProcessed(state.range(0) * sizeof(a[0]) * state.iterations());
-//	delete[] a;
-//}
-//
-//static void BM_UpdateFoo(benchmark::State& state) {
-//	FooUpdateIn* in = new FooUpdateIn[state.range(0)];
-//	FooUpdateOut* out = new FooUpdateOut[state.range(0)];
-//	for (auto _ : state) {
-//		UpdateFoo(in, out, (int)state.range(0), 0.1f);
-//		benchmark::DoNotOptimize(in);
-//		benchmark::DoNotOptimize(out);
-//		benchmark::ClobberMemory();
-//	}
-//	state.SetItemsProcessed(state.range(0) * (sizeof(in[0]) + sizeof(out[0])) * state.iterations());
-//
-//	delete[] in;
-//	delete[] out;
-//}
-//
-////16k = 1 << 14;
-//BENCHMARK(BM_UpdateFoo)->Range(1 << 20, 1 << 21);
-////BENCHMARK(BM_UpdateFoo)->Range(1 << 14, 1 << 15);
-//
-//BENCHMARK(BM_UpdateFoo2)->Range(1 << 20, 1 << 21);
-//
-
-
-//_EXPORT_STD using nano = ratio<1, 1000000000>;
-//_EXPORT_STD using micro = ratio<1, 1000000>;
-//_EXPORT_STD using milli = ratio<1, 1000>;
-
-
-
-BENCHMARK_MAIN();
+int main() {
+	example_inserti();
+}

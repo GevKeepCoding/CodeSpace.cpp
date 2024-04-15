@@ -1,0 +1,426 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:206 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The target system is: Windows - 10.0.22631 - x86
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.29.30133/bin/HostX64/x86/cl.exe 
+      Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/GR;/EHsc;/MP
+      Id flags:  
+      
+      The output was:
+      0
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-r0rmq0"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-r0rmq0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-r0rmq0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_377e1
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_377e1.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_377e1.dir\\ /FS -c C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_377e1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_377e1.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_377e1.exe /implib:cmTC_377e1.lib /pdb:cmTC_377e1.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:125 (check_library_exists)"
+    checks:
+      - "Looking for shm_open in rt"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-70qmp8"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-70qmp8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_LIB_RT"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-70qmp8'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_efb16
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  -DCHECK_FUNCTION_EXISTS=shm_open /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_efb16.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_efb16.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\CMakeScratch\\TryCompile-70qmp8\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_efb16.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_efb16.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_efb16.exe /implib:cmTC_efb16.lib /pdb:cmTC_efb16.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  rt.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_efb16.exe 
+        cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_efb16.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_efb16.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_efb16.exe /implib:cmTC_efb16.lib /pdb:cmTC_efb16.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  rt.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_efb16.dir\\CheckFunctionExists.cxx.obj /out:cmTC_efb16.exe /implib:cmTC_efb16.lib /pdb:cmTC_efb16.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console rt.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_efb16.dir/intermediate.manifest CMakeFiles\\cmTC_efb16.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'rt.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:295 (cxx_feature_check)"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d154a
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_d154a.dir\\std_regex.cpp.obj /FdCMakeFiles\\cmTC_d154a.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\std_regex.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_d154a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_d154a.dir\\std_regex.cpp.obj  /out:cmTC_d154a.exe /implib:cmTC_d154a.lib /pdb:cmTC_d154a.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:296 (cxx_feature_check)"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6eebd
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_6eebd.dir\\gnu_posix_regex.cpp.obj /FdCMakeFiles\\cmTC_6eebd.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\gnu_posix_regex.cpp
+        FAILED: CMakeFiles/cmTC_6eebd.dir/gnu_posix_regex.cpp.obj 
+        C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_6eebd.dir\\gnu_posix_regex.cpp.obj /FdCMakeFiles\\cmTC_6eebd.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\gnu_posix_regex.cpp
+        D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\gnu_posix_regex.cpp(1): fatal error C1083: Cannot open include file: 'gnuregex.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:297 (cxx_feature_check)"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ef566
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_ef566.dir\\posix_regex.cpp.obj /FdCMakeFiles\\cmTC_ef566.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\posix_regex.cpp
+        FAILED: CMakeFiles/cmTC_ef566.dir/posix_regex.cpp.obj 
+        C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_ef566.dir\\posix_regex.cpp.obj /FdCMakeFiles\\cmTC_ef566.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\posix_regex.cpp
+        D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\posix_regex.cpp(1): fatal error C1083: Cannot open include file: 'regex.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:306 (cxx_feature_check)"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_75bbf
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_75bbf.dir\\steady_clock.cpp.obj /FdCMakeFiles\\cmTC_75bbf.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\steady_clock.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_75bbf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_75bbf.dir\\steady_clock.cpp.obj  /out:cmTC_75bbf.exe /implib:cmTC_75bbf.lib /pdb:cmTC_75bbf.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:309 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-v0xljo"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-v0xljo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-v0xljo'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_db4de
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -std:c++14 -MTd /showIncludes /FoCMakeFiles\\cmTC_db4de.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_db4de.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\CMakeScratch\\TryCompile-v0xljo\\src.cxx
+        FAILED: CMakeFiles/cmTC_db4de.dir/src.cxx.obj 
+        C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -std:c++14 -MTd /showIncludes /FoCMakeFiles\\cmTC_db4de.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_db4de.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\CMakeScratch\\TryCompile-v0xljo\\src.cxx
+        D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\CMakeScratch\\TryCompile-v0xljo\\src.cxx(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:309 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-vfcn2k"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-vfcn2k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-vfcn2k'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_dcb66
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4 -DCHECK_FUNCTION_EXISTS=pthread_create /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -std:c++14 -MTd /showIncludes /FoCMakeFiles\\cmTC_dcb66.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_dcb66.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\CMakeScratch\\TryCompile-vfcn2k\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_dcb66.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_dcb66.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_dcb66.exe /implib:cmTC_dcb66.lib /pdb:cmTC_dcb66.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_dcb66.exe 
+        cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_dcb66.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_dcb66.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_dcb66.exe /implib:cmTC_dcb66.lib /pdb:cmTC_dcb66.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_dcb66.dir\\CheckFunctionExists.cxx.obj /out:cmTC_dcb66.exe /implib:cmTC_dcb66.lib /pdb:cmTC_dcb66.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dcb66.dir/intermediate.manifest CMakeFiles\\cmTC_dcb66.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:309 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-dgc43l"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-dgc43l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeScratch/TryCompile-dgc43l'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5e820
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4 -DCHECK_FUNCTION_EXISTS=pthread_create /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -std:c++14 -MTd /showIncludes /FoCMakeFiles\\cmTC_5e820.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_5e820.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\x86-windows-static-rel\\CMakeFiles\\CMakeScratch\\TryCompile-dgc43l\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5e820.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_5e820.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_5e820.exe /implib:cmTC_5e820.lib /pdb:cmTC_5e820.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_5e820.exe 
+        cmd.exe /C "cd . && C:\\Users\\Gevorg_Arakelyan\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5e820.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_5e820.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_5e820.exe /implib:cmTC_5e820.lib /pdb:cmTC_5e820.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\link.exe /nologo CMakeFiles\\cmTC_5e820.dir\\CheckFunctionExists.cxx.obj /out:cmTC_5e820.exe /implib:cmTC_5e820.lib /pdb:cmTC_5e820.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_5e820.dir/intermediate.manifest CMakeFiles\\cmTC_5e820.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/CXXFeatureCheck.cmake:57 (try_run)"
+      - "CMakeLists.txt:310 (cxx_feature_check)"
+    directories:
+      source: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+      binary: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake/Modules;D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/src/v1.8.2-03d9bc3ebb.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:static,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x86"
+      VCPKG_TARGET_TRIPLET: "x86-windows-static"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/vcpkg"
+    buildResult:
+      variable: "COMPILE_HAVE_PTHREAD_AFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/benchmark/x86-windows-static-rel/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2e0cf
+        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_2e0cf.dir\\pthread_affinity.cpp.obj /FdCMakeFiles\\cmTC_2e0cf.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\pthread_affinity.cpp
+        FAILED: CMakeFiles/cmTC_2e0cf.dir/pthread_affinity.cpp.obj 
+        C:\\PROGRA~1\\MICROS~3\\2022\\Preview\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x86\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS  /utf-8 /GR /EHsc /MP  /W4  /D_DEBUG /MTd /Z7 /Ob0 /Od /RTC1  -MTd /showIncludes /FoCMakeFiles\\cmTC_2e0cf.dir\\pthread_affinity.cpp.obj /FdCMakeFiles\\cmTC_2e0cf.dir\\ /FS -c D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\pthread_affinity.cpp
+        D:\\GevKeepCoding\\XDevCodeSpace\\CodeSpace.cpp\\Simd_Benchmarks\\vcpkg_installed\\x86-windows-static\\vcpkg\\blds\\benchmark\\src\\v1.8.2-03d9bc3ebb.clean\\cmake\\pthread_affinity.cpp(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "RUN_HAVE_PTHREAD_AFFINITY"
+      cached: true
+...

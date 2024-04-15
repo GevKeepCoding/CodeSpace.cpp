@@ -1,3 +1,9 @@
+## Books to read: 
+* Computer Architecture: A Quantitative Approach
+* 
+
+
+
 # 1. Implement 10 graph algorithms
  
 

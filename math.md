@@ -27,3 +27,10 @@ todo: read above article
 _nextafter(x, y) => returns the closest representable neighbor of x in the direction toward y.
 
 ---
+TODO:https://cp-algorithms.com
+
+
+
+---
+### Absract Algebra
+- [ ] Abstract Algebra, 3rd Edition

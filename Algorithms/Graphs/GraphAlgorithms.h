@@ -35,6 +35,7 @@ namespace graph_algos
 		}
 	}
 
+	namespace shortest_paths {
 	/*
 	Dijkstra's algorithm is a single-source shortest path algorithm that
 	finds the minimum distance between a source vertex and every other
@@ -43,13 +44,14 @@ namespace graph_algos
 	The algorithm then updates the distances of its adjacent vertices.
 	This process continues until the algorithm has included all vertices
 	in the tree or if the destination vertex is included in the tree.
+	* Should have non-negative edge weights.
 	*/
 	auto MinDistanceDijkstra(vvGraph const& graph, std::vector<std::vector<float>> dist, size_t start)
 	{
 		size_t count = graph.size();
 		std::map<size_t, float> distances;
 		for (size_t i = 0; i < count; ++i) {
-			distances.insert({ i, std::numeric_limits<float>::infinity() });
+			distances.insert({i, std::numeric_limits<float>::infinity()});
 		}
 		distances[start] = 0;
 
@@ -58,7 +60,7 @@ namespace graph_algos
 		while (visited.size() != count)
 		{
 			// find node with the smallest distance from the start node that has yet been visited
-			size_t closest_vertex = 0;float min_distance = std::numeric_limits<float>::infinity();
+			size_t closest_vertex = 0; float min_distance = std::numeric_limits<float>::infinity();
 			for (size_t vertex = 0; vertex < count; ++vertex) {
 				if (!visited.contains(vertex)) {
 					if (distances[vertex] < min_distance) {
@@ -86,11 +88,16 @@ namespace graph_algos
 	}
 
 
+	
+
+
+	}
 
 
 
 
-	// Bipartite means that graph can be drawn with two colors and any no edge connects nodes with same color.
+	// Bipartite means that graph can be drawn with two colors and
+	// any no edge connects nodes with same color.
 	bool IsGraphBipartite(const vvGraph& graph)
 	{
 		enum Colors { NotColored = 0, Red, Green };

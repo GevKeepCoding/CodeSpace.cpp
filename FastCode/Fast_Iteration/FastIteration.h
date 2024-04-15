@@ -105,8 +105,8 @@ namespace fast_iteration
 		}
 	}
 
-	BENCHMARK(bm_list_iteration)->Range(1 << 14, 1 << 15)->Unit(benchmark::TimeUnit::kMicrosecond);
-	BENCHMARK(bm_fast_list_iteration)->Range(1 << 14, 1 << 15)->Unit(benchmark::TimeUnit::kMicrosecond);
-	BENCHMARK(bm_fast_list_iteration2)->Range(1 << 14, 1 << 15)->Unit(benchmark::TimeUnit::kMicrosecond);
+	//BENCHMARK(bm_list_iteration)->Range(1 << 14, 1 << 15)->Unit(benchmark::TimeUnit::kMicrosecond);
+	//BENCHMARK(bm_fast_list_iteration)->Range(1 << 14, 1 << 15)->Unit(benchmark::TimeUnit::kMicrosecond);
+	//BENCHMARK(bm_fast_list_iteration2)->Range(1 << 14, 1 << 15)->Unit(benchmark::TimeUnit::kMicrosecond);
 
 }
