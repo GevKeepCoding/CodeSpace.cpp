@@ -1,0 +1,8 @@
+Package: benchmark
+Version: 1.8.2
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 22e7dccfb563a2a6e4518eec596279a2d4371578e66237d245648ab378569732
+Description: A library to support the benchmarking of functions, similar to unit-tests.
+Status: purge ok half-installed

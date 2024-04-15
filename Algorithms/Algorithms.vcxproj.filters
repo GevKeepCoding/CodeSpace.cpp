@@ -44,15 +44,25 @@
       <Filter>Search</Filter>
     </ClInclude>
     <ClInclude Include="Graphs\graph_algos2.h" />
+    <ClInclude Include="DP\dp1.h" />
+    <ClInclude Include="Sorting\SortingAlgos1.h" />
+    <ClInclude Include="DataStructures\DataStructures1.h" />
+    <ClInclude Include="Caches\Smart_caches.h" />
+    <ClInclude Include="Arrays\a1.h" />
+    <ClInclude Include="DataStructures\ds2.h" />
+    <ClInclude Include="DataStructures\IndexedPriorityQueue.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Graphs\GraphAlgorithms.md">
       <Filter>Graph</Filter>
     </None>
+    <None Include="TODO\todo.md" />
+    <None Include="DataStructures\DataStructures.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="kata.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructures\DataStructures1_kata.cpp" />
   </ItemGroup>
 </Project>

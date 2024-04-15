@@ -79,7 +79,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Label="Vcpkg">
-    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <VcpkgUseStatic>false</VcpkgUseStatic>
@@ -166,15 +166,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="chrono\Chrono1.h" />
-    <ClInclude Include="Cpp23_1.h" />
-    <ClInclude Include="cpp23_algorithms.h" />
+    <ClInclude Include="Cpp_next\Cpp23_1.h" />
+    <ClInclude Include="Cpp_next\cpp23_algorithms.h" />
+    <ClInclude Include="Cpp_next\Cpp26.h" />
     <ClInclude Include="CppKnowledge.h" />
+    <ClInclude Include="FastPimpl\FastPimpl.h" />
     <ClInclude Include="mdspans.h" />
+    <ClInclude Include="Parallel\P1.h" />
+    <ClInclude Include="Parallel\P1_t.h" />
     <ClInclude Include="pmr01.h" />
     <ClInclude Include="Ranges\PowerRanges.h" />
     <ClInclude Include="Ranges\Ranges1.h" />
     <ClInclude Include="Ranges\Ranges2.h" />
     <ClInclude Include="Ranges\Ranges3.h" />
+    <ClInclude Include="ScopeGuard1.h" />
     <ClInclude Include="Symbolic_Calculus.h" />
     <ClInclude Include="ThreeWayOperator.h" />
     <ClInclude Include="tracing_resources.h" />
@@ -185,7 +190,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="chrono\Readme.md" />
-    <None Include="vcpkg.json" />
+    <None Include="ScopeGuard.md" />
+    <None Include="vcpkges.json" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\clocks.png" />

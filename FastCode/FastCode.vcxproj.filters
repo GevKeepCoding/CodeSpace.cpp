@@ -11,9 +11,6 @@
     <Filter Include="BetterBranchPredictor">
       <UniqueIdentifier>{8da3558f-1d3e-4eb7-838f-5b043c2b254d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FastParsing">
-      <UniqueIdentifier>{3e323213-032d-40ee-becd-2d892d79e9f7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ImageProcessing">
       <UniqueIdentifier>{ec62456f-e820-451c-acff-61f9cd0666a1}</UniqueIdentifier>
     </Filter>
@@ -23,13 +20,22 @@
     <Filter Include="Memory">
       <UniqueIdentifier>{c7972aed-2212-4d8b-a77e-7f6da6058a37}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Parsing">
+      <UniqueIdentifier>{3e323213-032d-40ee-becd-2d892d79e9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{aa598c5a-29a2-493b-b34d-19675668e808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Atomic">
+      <UniqueIdentifier>{c5a56c25-eafe-4861-80a2-4fe26c87bda7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>TipsAndTricks</Filter>
     </ClCompile>
-    <ClCompile Include="Parsing1.h">
-      <Filter>FastParsing</Filter>
+    <ClCompile Include="Parsing\Parsing1.h">
+      <Filter>Parsing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -67,8 +73,19 @@
     <ClInclude Include="Memory\Memory1.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="Fast_Iteration\FastIteration.h" />
-    <ClInclude Include="Helper\simplify.h" />
+    <ClInclude Include="Fast_Iteration\FastIteration.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\simplify.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Atomic\a1.h">
+      <Filter>Atomic</Filter>
+    </ClInclude>
+    <ClInclude Include="New\N1.h" />
+    <ClInclude Include="Memory\Memory2.h" />
+    <ClInclude Include="Floating_point_numbers\floating_points1.h" />
+    <ClInclude Include="inclusive_scan_bench.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FastMemory1.md">
@@ -83,6 +100,13 @@
       <Filter>Memory</Filter>
     </None>
     <None Include="Memory\memory1.md">
+      <Filter>Memory</Filter>
+    </None>
+    <None Include="New\new.md" />
+    <None Include="Memory\DirectMemory.md">
+      <Filter>Memory</Filter>
+    </None>
+    <None Include="Memory\LifeTime.md">
       <Filter>Memory</Filter>
     </None>
   </ItemGroup>

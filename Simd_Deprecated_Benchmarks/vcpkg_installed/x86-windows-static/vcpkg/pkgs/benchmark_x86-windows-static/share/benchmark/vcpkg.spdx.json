@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/benchmark-x86-windows-static-1.8.2-3da3f275-8ad9-4a85-8bcc-c17374f533a7",
+  "name": "benchmark:x86-windows-static@1.8.2 b822cebdf817955d0d6fd8d88b847901a179b6cf5344d230e4126b402e98aa95",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-710a3116bbd615864eef5f9010af178034cb9b44"
+    ],
+    "created": "2024-03-11T06:58:01Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "benchmark",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "1.8.2",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@54f61ab31bcb486a12c859c33db17905f397cc0c",
+      "homepage": "https://github.com/google/benchmark",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "A library to support the benchmarking of functions, similar to unit-tests.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "benchmark:x86-windows-static",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "b822cebdf817955d0d6fd8d88b847901a179b6cf5344d230e4126b402e98aa95",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "google/benchmark",
+      "downloadLocation": "git+https://github.com/google/benchmark@v1.8.2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "532f2cee66cf527ef4452a060cfdedba6417e5d8f72225d6bf50adf6422d9a769b0f54f48982b438fa9ced975ac47bcc5e62c3c23ce871b5cfdbcf9cc0d2b829"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/registries/git-trees/54f61ab31bcb486a12c859c33db17905f397cc0c/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "272693b0ae5410e98caeefc70bc75f6ddf072abbd1587d4853ecda10a974f23b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/Gevorg_Arakelyan/AppData/Local/vcpkg/registries/git-trees/54f61ab31bcb486a12c859c33db17905f397cc0c/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "578f3dd358cac0552eea846c31851935ccbece38cc5da2562da1f61ba73fdf9d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

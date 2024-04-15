@@ -1,0 +1,2 @@
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/detect_compiler/x86-windows-static-rel/CMakeFiles/edit_cache.dir
+D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x86-windows-static/vcpkg/blds/detect_compiler/x86-windows-static-rel/CMakeFiles/rebuild_cache.dir

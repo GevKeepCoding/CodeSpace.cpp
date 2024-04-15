@@ -120,7 +120,7 @@ __builtin_expect(error,1)
 above will improve loop stream detector performance.
 * uops will be fetched from cache.
 
-### FACEBOOK BOLT will rearrange hot clllode together.
+### FACEBOOK BOLT will rearrange hot code together.
 
 Farther reading:
 https://easyperf.net/notes

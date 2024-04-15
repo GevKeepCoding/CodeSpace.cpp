@@ -1,4 +1,61 @@
 
+# Graph Algorithms
+- [X] BFS
+- [X] DFS
+- [X] Dijkstra's Algorithm
+- [] Bellman-Ford Algorithm
+- [] Floyd-Warshall Algorithm
+- [] Prim's Algorithm
+- [] Kruskal's Algorithm
+- [] Topological Sort
+	- [] Kahn's Algorithm
+	- [] Tarjan's Algorithm
+	- [] Depth-First Search
+	- [] Breadth-First Search?
+	- [] Lexicographical Topological Sort?
+
+---
+- [ ] Strongly Connected Components
+	- [ ] [Kosaraju's Algorithm for Strongly Connected Components](https://www.youtube.com/watch?v=HOOmetF56BI)
+	- [ ] [Strongly Connected Components Kosaraju's Algorithm Graph Algorithm](https://www.youtube.com/watch?v=RpgcYiky7uw)
+	- [ ] 
+---
+- [ ] Minimum Spanning Tree
+	- [ ] Prim's Algorithm
+	- [ ] Kruskal's Algorithm
+	- [ ] Boruvka's Algorithm
+	- [ ] Jarnik's Algorithm
+	- [ ] Reverse-Delete Algorithm
+---
+- [] Johnson's Algorithm
+- [] Ford-Fulkerson Algorithm
+- [] A* Algorithm
+
+
+- [] Edmonds-Karp Algorithm
+- [] Hopcroft-Karp Algorithm
+- [] Tarjan's Algorithm
+- [] Kosaraju's Algorithm
+- [] Gabow's Algorithm
+- [] Chokker-Vizing Algorithm
+- [] Erdos-Gallai Algorithm
+- [] Bron-Kerbosch Algorithm
+- [] Hungarian Algorithm
+- [] Gale-Shapley Algorithm
+- [] Dinic's Algorithm
+- [] Aho-Corasick Algorithm
+- [] Boyer-Moore Algorithm
+- [] Rabin-Karp Algorithm
+- [] Knuth-Morris-Pratt Algorithm
+- [] Z Algorithm
+- [] Manacher's Algorithm
+- [] Suffix Array
+- [] Suffix Tree
+- [] Suffix Automaton
+- [] Burrows-Wheeler Transform
+
+
+
 ---
 ## BFS
 Used to search graph data structure for a node that meets a set of criteria.

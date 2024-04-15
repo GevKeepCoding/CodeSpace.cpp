@@ -1,0 +1,12 @@
+prefix=D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x64-windows-static/vcpkg/pkgs/benchmark_x64-windows-static
+exec_prefix=${prefix}
+libdir=D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x64-windows-static/vcpkg/pkgs/benchmark_x64-windows-static/lib
+includedir=D:/GevKeepCoding/XDevCodeSpace/CodeSpace.cpp/Simd_Benchmarks/vcpkg_installed/x64-windows-static/vcpkg/pkgs/benchmark_x64-windows-static/include
+
+Name: benchmark
+Description: Google microbenchmark framework
+Version: 1.8.3
+
+Libs: -L${libdir} -lbenchmark
+Libs.private: -lpthread
+Cflags: -I${includedir}

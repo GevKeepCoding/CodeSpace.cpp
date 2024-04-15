@@ -31,6 +31,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>true</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -38,12 +39,14 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>true</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>true</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,6 +54,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>true</EnableASAN>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -79,6 +83,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <BuildStlModules>true</BuildStlModules>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -96,6 +101,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <BuildStlModules>true</BuildStlModules>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,6 +139,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <BuildStlModules>true</BuildStlModules>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,20 +149,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="DataStructures\DataStructures.md" />
     <None Include="Graphs\GraphAlgorithms.md" />
+    <None Include="TODO\todo.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01Finders.h" />
+    <ClInclude Include="Arrays\a1.h" />
     <ClInclude Include="Backtracking.h" />
+    <ClInclude Include="DataStructures\ds2.h" />
+    <ClInclude Include="DataStructures\IndexedPriorityQueue.h" />
+    <ClInclude Include="DP\dp1.h" />
     <ClInclude Include="Graphs\Graph.h" />
     <ClInclude Include="Graphs\GraphAlgorithms.h" />
     <ClInclude Include="Graphs\graph_algos2.h" />
+    <ClInclude Include="Caches\Smart_caches.h" />
     <ClInclude Include="SortingAlgorithms.h" />
+    <ClInclude Include="Sorting\SortingAlgos1.h" />
     <ClInclude Include="StdKata.h" />
     <ClInclude Include="StringAlgorithms.h" />
+    <ClInclude Include="DataStructures\DataStructures1.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="kata.cpp" />
+    <ClCompile Include="DataStructures\DataStructures1_kata.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,6 +15,8 @@
     <None Include="Geometry\Geometry_wiki.md">
       <Filter>Geometry</Filter>
     </None>
+    <None Include="New\n1.md" />
+    <None Include="Algebra\Abstract.Algebra.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="floats-01.h">
@@ -26,6 +28,8 @@
     <ClInclude Include="Geometry\2DGeometry_1.h">
       <Filter>Geometry</Filter>
     </ClInclude>
+    <ClInclude Include="Algebra1.h" />
+    <ClInclude Include="Algebra\Groups.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />

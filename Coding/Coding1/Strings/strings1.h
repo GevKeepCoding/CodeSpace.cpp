@@ -159,5 +159,51 @@ namespace strings1
 
 }
 
+//Ones and Zeroes - Leetcode 474 - Python
+//https://www.youtube.com/watch?v=miZ3qV04b1g&list=PLQpVsaqBj4RLwXMZ9LaAFf4rVowiC3ZcG&index=19
+namespace strings1 {
+
+	class Solution {
+	public:
+
+		int dfs(int i, int m, int n) {
+			if (i == strs.size()) return 0;
+
+			if (dp.contains(tuple(i, m, n))) {
+				return dp[tuple(i, m, n)];
+			}
+			auto countOfZeroes = count(strs[i].begin(), strs[i].end(), '0');
+			auto countOfOnes = strs[i].size() - countOfZeroes;
+			return std::max(dfs(i + 1, m, n), dfs(i + 1, m - countOfZeroes, n - countOfOnes) + 1);
+		}
+
+		std::map<tuple<int, int, int>, int> dp;
 
 
+
+		vector<string> strs;
+		int findMaxForm(vector<string>& strs, int m, int n) {
+			this->strs = std::move(strs);
+
+			return dfs(0, m, n);
+		}
+	};
+
+	class Solution_2 {
+		std::map<tuple<int, int>, int> dp;
+
+
+		int findMaxForm(vector<string>& strs, int m, int n) {
+			for (int i = 0; i < strs.size(); i++) {
+				auto countOfZeroes = count(strs[i].begin(), strs[i].end(), '0');
+				auto countOfOnes = strs[i].size() - countOfZeroes;
+				for (int j = m; j >= countOfZeroes; j--) {
+					for (int k = n; k >= countOfOnes; k--) {
+						dp[tuple(j, k)] = std::max(dp[tuple(j, k)], dp[tuple(j - countOfZeroes, k - countOfOnes)] + 1);
+					}
+				}
+			}
+			return dp[tuple(m, n)];
+		}
+	};
+}

@@ -84,7 +84,7 @@
     </VcpkgUseStatic>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg">
-    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -165,29 +165,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Parsing1.h" />
+    <ClCompile Include="Parsing\Parsing1.h" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01BranchPredictions.h" />
     <ClInclude Include="01_pmr.h" />
+    <ClInclude Include="Atomic\a1.h" />
     <ClInclude Include="BranchLessProgramming.h" />
     <ClInclude Include="exp1.h" />
     <ClInclude Include="Fast_Iteration\FastIteration.h" />
     <ClInclude Include="File_io.h" />
+    <ClInclude Include="Floating_point_numbers\floating_points1.h" />
     <ClInclude Include="Helper\simplify.h" />
     <ClInclude Include="How_to_reconstruct_type.h" />
+    <ClInclude Include="inclusive_scan_bench.h" />
     <ClInclude Include="ip01.h" />
     <ClInclude Include="LazyPrValue.h" />
     <ClInclude Include="Memory\Memory1.h" />
+    <ClInclude Include="Memory\Memory2.h" />
+    <ClInclude Include="New\N1.h" />
     <ClInclude Include="OFast.h" />
     <ClInclude Include="Tips101.h" />
     <ClInclude Include="Tricks1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FastMemory1.md" />
+    <None Include="Memory\DirectMemory.md" />
+    <None Include="Memory\LifeTime.md" />
     <None Include="Memory\memory1.md" />
     <None Include="Memory\Readme.md" />
+    <None Include="New\new.md" />
     <None Include="Understanding_Performance.md" />
     <None Include="vcpkg.json" />
     <None Include="Reame.md" />
